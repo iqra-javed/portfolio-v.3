@@ -1,7 +1,124 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     -webkit-font-smoothing: antialiased;
 }
 
 .header-nav {
+    position: fixed;
     display: table;
+    overflow: hidden;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    display: table;
+    width: 330px;
+    height: 100%;
+    z-index: 10;
+    transition: right .5s ease;
+    backface-visibility: hidden;
+}
+
+ul {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    overflow: hidden;
+    list-style: none;
+    overflow: hidden;
+}
+
+li {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    float: none;
+    margin: 0;
+    padding: 10px 37px 10px 10px;
+    text-align: -webkit-match-parent;
+}
+
+.header-nav ul li a {
+    float: right;
+    color: #333;
+    text-align: right;
+    padding: 5px 0;
+    display: block;
+    position: relative;
+    line-height: 30px;
+    transition: all .5s linear;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+
+.brand-block {
+    left: 0;
+    z-index: 2;
+    backface-visibility: hidden;
+}
+
+.global-overlay {
+    transition: all .5s ease;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    backface-visibility: hidden;
+}
+
+.overlay {
+    transition: transform 1.5s ease;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+}
+
+.over-wrapper {
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.cover-background {
+    background-image: url("../assets/jonas-zurcher-544643-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.overlay-shape {
+    top: -10%;
+    bottom: auto;
+    left: -10%;
+    right: auto;
+    width: 50vw;
+    height: 100vh;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    background-color: #000a1e;
+}
+
+.overlay-inner {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #000a1e;
+}
+
+.opacity-70 {
+    opacity: .7;
+}
+
+.opacity-30 {
+    opacity: .3;
 }
