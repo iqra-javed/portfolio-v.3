@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Iqra Javed</title>
     <link rel="stylesheet" href="css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
+
 <body>
     <div class="main-container">
         <header>
@@ -19,24 +22,58 @@
             </div>
             <nav class="header-nav">
                 <ul class="nav">
-                    <li class="active"><a href="#Home">Home</a></li>
-                    <li><a href="#About">About Me</a></li>
-                    <li><a href="#Skills">Skills</a></li>
-                    <li><a href="#Projects">Projects</a></li>
-                    <li><a href="#Contact">Contact</a></li>
-                    <li><a href="#Resume">Resume</a></li>
+                    <li><a href="#Home" class="home">Home</a></li>
+                    <li><a href="#About" class="about nav-tab">About Me</a></li>
+                    <li><a href="#Skills" class="skills nav-tab">Skills</a></li>
+                    <li><a href="#Projects" class="projects nav-tab">Projects</a></li>
+                    <li><a href="#Contact" class="contact nav-tab">Contact</a></li>
+                    <li><a href="#Resume" class="resume nav-tab">Resume</a></li>
                 </ul>
             </nav>
-            <div class="global-overlay">
-                <div class="overlay">
-                    <div class="overlay-wrapper">
-                        <div class="overlay-inner cover-background"></div>
-                        <div class="overlay-inner opacity-30"></div>
-                        <div class="overlay-shape opacity-70"></div>
-                    </div>
+
+        </header>
+        <div class="nav-content">         
+            <div class="content-container">
+                <section id="home-content" class="section">HOME CONTENT</section>
+                <section id="about" class="section">ABOUT</section>
+                <section id="skills" class="section">SKILLS</section>
+                <section id="projects" class="section">PROJECTS</section>
+                <section id="contact" class="section">CONTACT</section>
+                <section id="resume" class="section">RESUME</section>
+            </div>
+        </div>
+        <div class="global-overlay">
+            <div class="overlay">
+                <div class="overlay-wrapper">
+                    <div class="overlay-inner cover-background"></div>
+                    <div class="overlay-inner opacity-30"></div>
+                    <div class="overlay-shape opacity-70"></div>
                 </div>
             </div>
-        </header>
+            <!-- <div class="nav-content-block">
+                <div class="content-container">
+                    <section id="home-content" class="section"></section>
+                    <section id="about" class="section"></section>
+                    <section id="skills" class="section"></section>
+                    <section id="projects" class="section"></section>
+                    <section id="contact" class="section"></section>
+                    <section id="resume" class="section"></section>
+                </div>
+            </div> -->
+        </div>
+        <div class="home-container">
+            <div class="home-content">
+                <div class="content-heading">
+                    Iqra Javed
+                </div>
+                <h2 class="content-subheading">
+                    Web Developer
+                </h2>
+            </div>
+        </div>
     </div>
+    <script src="./js/slider.js" type="text/javascript"></script>
+    
 </body>
+
 </html>
