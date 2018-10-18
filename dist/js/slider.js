@@ -55,7 +55,7 @@ $(".contact").click(function() {
 });
 
 $(".resume").click(function() {
-    $([document.documentElement, document.body]).animate({
-        scrollTop: $("resume").offset().top
-    }, 1500);
+  $([document.documentElement, document.body]).animate({
+      scrollTop: $("#resume").offset().top
+  }, 1500);
 });
