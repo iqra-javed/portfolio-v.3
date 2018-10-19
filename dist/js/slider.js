@@ -1,7 +1,6 @@
 
 // var cssProperties = { left: '-200px', background: "red", display: "block" }
 var cssProperties = { left: '25%' }
-var cssProperties2 = { left: '-25%' }
 
 // var shapeToggle = {webkitTransform: 'rotateY(0deg)'}
 
@@ -17,13 +16,10 @@ $('.home').click(function() {
   $('.global-overlay').css('width', '100%')
   $('.header-nav').css('width', '330px')
   $('.header-nav').css('left', 'inherit');
-
-  // $('.header-nav').animate(cssProperties2);
 });
 
 $('.nav-tab').click(function() {
-  $('.header-nav').animate(cssProperties);
-
+  $('.header-nav').animate(cssProperties, 1000);
   $('.overlay-shape').css('-webkit-transform', 'rotate(0deg)');
   $('.header-nav').css('width', '25%');
 // $('.overlay-shape').toggleClass('shapeToggle');
