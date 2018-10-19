@@ -22,7 +22,6 @@ $('.nav-tab').click(function() {
   $('.header-nav').animate(cssProperties, 1000);
   $('.overlay-shape').css('-webkit-transform', 'rotate(0deg)');
   $('.header-nav').css('width', '25%');
-// $('.overlay-shape').toggleClass('shapeToggle');
   $('.global-overlay').css('width', '50%')
 });
 

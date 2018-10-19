@@ -17,7 +17,7 @@ body {
     display: table;
     width: 330px;
     height: 100%;
-    z-index: 10;
+    z-index: 5;
     transition: right .5s ease;
     backface-visibility: hidden;
 
@@ -59,6 +59,10 @@ li {
     text-decoration: none;
 }
 
+/* .header-nav ul li a:hover {
+    color: #bfbfbf;
+} */
+
 .social-icons {
     display: flex;
     justify-content: space-around;
@@ -69,6 +73,10 @@ li {
     position: relative;
     padding: 10px;
     width: 80%;
+}
+
+.social-icons a:hover {
+    color: 	#bfbfbf;
 }
 
 
@@ -174,15 +182,16 @@ li {
 }
 
 .content-heading {
-    font-size: 50px;
+    font-size: 60px;
     font-weight: bold;
     padding-left: 15%;
 }
 
 .content-subheading {
-    padding-left: 29%;
+    padding-left: 30%;
+    font-size: 30px;
 }
-
+/* 
 .nav-content-block {
     position: relative;
     width: 50%;
@@ -190,7 +199,8 @@ li {
     background-color: #fff;
     overflow: hidden;
     right: -50%;
-}
+    z-index: 20;
+} */
 
 section {
     display: flex;
@@ -247,12 +257,24 @@ section {
 .project {
     margin: 15px;
     width: 50%;
-    height: 200px;
+    height: 300px;
     background-color: lightgray;
 }
 
+.project-name {
+    height: 10%;
+    padding-top: 4px;
+    color: #585260;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    background: #fff;
+    border:  2px solid #21293E;
+    border-bottom: 1px solid #21293E;
+}
+
 .project-img {
-    height: 70%;
+    height: 45%;
 }
 
 .notes-app {
@@ -277,7 +299,7 @@ section {
 
 .live-site {
     padding: 5px;
-    height: 15%;
+    height: 10%;
     background-color: #585260;
     color: #fff;
     width: 100%;
@@ -293,7 +315,7 @@ section {
 
 .github {
     padding: 5px;
-    height: 15%;
+    height: 10%;
     background-color: #21293E;
     color: #fff;
     width: 100%;
@@ -306,7 +328,25 @@ section {
     border: 3px solid #21293E;
 }
 
-.shapeToggle {
-    -webkit-transform: rotate(0deg);
+.tech-tags {
+    font-size: 12px;
+    font-weight: bold;
+    padding: 3px;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 30%;
+    background: #fff;
+    border:  2px solid #21293E;
+    border-top: none;
 }
+
+.tech-tags p {
+    color: white;
+    height: 20px;
+    margin: 4px;
+    padding: 3px;
+    background-color: gray;
+    border-radius: 15%;
+}
+
 
