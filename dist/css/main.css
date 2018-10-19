@@ -1,9 +1,11 @@
 * {
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 body {
     -webkit-font-smoothing: antialiased;
+    /* overflow-y: hidden */
 }
 
 .header-nav {
@@ -188,7 +190,6 @@ li {
     background-color: #fff;
     overflow: hidden;
     right: -50%;
-    border: 10px solid red;
 }
 
 section {
@@ -237,6 +238,72 @@ section {
 
 .blue-bg {
     color:  #21293E;
+}
+
+.projects-container {
+    display: flex;
+}
+
+.project {
+    margin: 15px;
+    width: 50%;
+    height: 200px;
+    background-color: lightgray;
+}
+
+.project-img {
+    height: 70%;
+}
+
+.notes-app {
+    background-image: url("../assets/Screen\ Shot\ 2018-10-19\ at\ 1.41.40\ PM.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.brawndo-app {
+    background-image: url("../assets/Screen\ Shot\ 2018-10-19\ at\ 2.02.42\ PM.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.fa-globe {
+    margin: 0 5px;
+}
+
+.fa-github {
+    margin: 0 5px;
+}
+
+.live-site {
+    padding: 5px;
+    height: 15%;
+    background-color: #585260;
+    color: #fff;
+    width: 100%;
+    font-weight: bold;
+}
+
+.live-site:hover {
+    background-color: #776f82;
+    cursor: pointer;
+    border: 3px solid #585260;
+}
+
+
+.github {
+    padding: 5px;
+    height: 15%;
+    background-color: #21293E;
+    color: #fff;
+    width: 100%;
+    font-weight: bold;
+}
+
+.github:hover {
+    background-color: #42527c;
+    cursor: pointer;
+    border: 3px solid #21293E;
 }
 
 .shapeToggle {
