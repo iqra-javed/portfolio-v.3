@@ -192,6 +192,8 @@ li {
 }
 
 section {
+    display: flex;
+    flex-direction: column;
     overflow: hidden;
     padding: 70px 0;
     height: 100vh;
@@ -207,6 +209,34 @@ section {
     width: 50%;
     height: 100vh;
     position: absolute;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.skills-heading {
+    margin: 15px 0 15px 8px;
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 1px solid;
+    letter-spacing: 3px;
+}
+
+.skills-list {
+    font-weight: normal;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.purple-bg {
+    color: #585260;
+}
+
+.blue-bg {
+    color:  #21293E;
 }
 
 .shapeToggle {
