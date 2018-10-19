@@ -1,7 +1,7 @@
 
 // var cssProperties = { left: '-200px', background: "red", display: "block" }
-var cssProperties = { left: '15%' }
-var cssProperties2 = { left: '-15%' }
+var cssProperties = { left: '25%' }
+var cssProperties2 = { left: '-25%' }
 
 // var shapeToggle = {webkitTransform: 'rotateY(0deg)'}
 
