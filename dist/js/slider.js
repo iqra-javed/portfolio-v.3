@@ -4,6 +4,7 @@ $(".home").click(function() {
   $(".global-overlay").css("width", "100%");
   $(".header-nav").css("width", "330px");
   $(".header-nav").css("left", "inherit");
+  $('body').css('overflow', 'hidden')
 });
 
 $(".nav-tab").click(function() {
@@ -13,6 +14,7 @@ $(".nav-tab").click(function() {
   $(".overlay-shape").css("transition", "transform 1s");
   $(".header-nav").css("width", "25%");
   $(".global-overlay").css("width", "50%");
+  $('body').css('overflow', 'auto')
 });
 
 $(".about").click(function() {

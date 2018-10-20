@@ -6,6 +6,7 @@
 body {
     -webkit-font-smoothing: antialiased;
     font-family: 'Quattrocento', serif;
+    overflow: hidden;
 }
 
 .header-nav {
@@ -68,7 +69,7 @@ li {
 .social-icons {
     display: flex;
     justify-content: space-around;
-    top: 100px;
+    top: 80px;
     left: 17%;
     font-size: 20px;
     color: #fff;
