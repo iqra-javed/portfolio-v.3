@@ -190,11 +190,13 @@ li {
     font-size: 60px;
     font-weight: bold;
     padding-left: 15%;
+    letter-spacing: 3px;
 }
 
 .content-subheading {
     padding-left: 30%;
     font-size: 30px;
+    letter-spacing: 3px;
 }
 /* 
 .nav-content-block {
@@ -219,6 +221,7 @@ section {
 
 section h1 {
     margin-bottom: 30px;
+    letter-spacing: 3px;
 }
 
 .nav-content {
@@ -271,6 +274,7 @@ section h1 {
 }
 
 .project-name {
+    letter-spacing: 3px;
     height: 10%;
     padding-top: 4px;
     color: #585260;
