@@ -22,35 +22,36 @@ $('.nav-tab').click(function() {
   $('.header-nav').animate(cssProperties, 1000);
   $('.overlay-shape').css('-webkit-transform', 'rotate(0deg)');
   $('.header-nav').css('width', '25%');
-  $('.global-overlay').css('width', '50%')
+  $('.global-overlay').css('width', '50%');
+  $('.header-nav ul li a').animate({color: '#fff'});
 });
 
 $(".about").click(function() {
     $([document.documentElement, document.body]).animate({
         scrollTop: $("#about").offset().top
-    }, 1500);
+    }, 1000);
 });
 
 $(".skills").click(function() {
     $([document.documentElement, document.body]).animate({
         scrollTop: $("#skills").offset().top
-    }, 1500);
+    }, 1000);
 });
 
 $(".projects").click(function() {
     $([document.documentElement, document.body]).animate({
         scrollTop: $("#projects").offset().top
-    }, 1500);
+    }, 1000);
 });
 
 $(".contact").click(function() {
     $([document.documentElement, document.body]).animate({
         scrollTop: $("#contact").offset().top
-    }, 1500);
+    }, 1000);
 });
 
 $(".resume").click(function() {
   $([document.documentElement, document.body]).animate({
       scrollTop: $("#resume").offset().top
-  }, 1500);
+  }, 1000);
 });

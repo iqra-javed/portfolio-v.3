@@ -6,6 +6,7 @@
 body {
     -webkit-font-smoothing: antialiased;
     /* overflow-y: hidden */
+    font-family: 'Quattrocento', serif;
 }
 
 .header-nav {
@@ -22,6 +23,10 @@ body {
     backface-visibility: hidden;
 
     /* width: 25%; */
+}
+
+#about div {
+    line-height: 2;
 }
 
 ul {
@@ -59,9 +64,9 @@ li {
     text-decoration: none;
 }
 
-/* .header-nav ul li a:hover {
+.header-nav ul li a:hover {
     color: #bfbfbf;
-} */
+}
 
 .social-icons {
     display: flex;
@@ -106,7 +111,7 @@ li {
 }
 
 .global-overlay {
-    transition: all .5s ease;
+    transition: all 1s ease;
     position: fixed;
     top: 0;
     bottom: 0;
@@ -212,6 +217,10 @@ section {
     padding-left: 15%;
 }
 
+section h1 {
+    margin-bottom: 30px;
+}
+
 .nav-content {
     top: 0;
     /* left: 655px; */
@@ -281,12 +290,14 @@ section {
     background-image: url("../assets/Screen\ Shot\ 2018-10-19\ at\ 1.41.40\ PM.png");
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .brawndo-app {
     background-image: url("../assets/Screen\ Shot\ 2018-10-19\ at\ 2.02.42\ PM.png");
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .fa-globe {
@@ -342,11 +353,22 @@ section {
 
 .tech-tags p {
     color: white;
+    font-weight: bold;
     height: 20px;
     margin: 4px;
     padding: 3px;
-    background-color: gray;
+    background-color: #b2b0b0;
     border-radius: 15%;
+}
+
+#email {
+    border: none;
+    font-size: 16px;
+}
+
+.fa-clipboard {
+    font-size: 25px;
+    margin-left: 15px;
 }
 
 
