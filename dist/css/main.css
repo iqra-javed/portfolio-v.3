@@ -5,7 +5,6 @@
 
 body {
     -webkit-font-smoothing: antialiased;
-    /* overflow-y: hidden */
     font-family: 'Quattrocento', serif;
 }
 
@@ -21,12 +20,11 @@ body {
     z-index: 5;
     transition: right .5s ease;
     backface-visibility: hidden;
-
-    /* width: 25%; */
 }
 
 #about div {
     line-height: 2;
+    margin-left: 5%;
 }
 
 ul {
@@ -50,7 +48,6 @@ li {
 
 .header-nav ul li a {
     float: right;
-    /* color: #333; */
     color: #fff;
     text-align: right;
     padding: 5px 0;
@@ -65,13 +62,13 @@ li {
 }
 
 .header-nav ul li a:hover {
-    color: #bfbfbf;
+    font-size: 20px;
 }
 
 .social-icons {
     display: flex;
     justify-content: space-around;
-    top: 120px;
+    top: 100px;
     left: 17%;
     font-size: 20px;
     color: #fff;
@@ -81,28 +78,8 @@ li {
 }
 
 .social-icons a:hover {
-    color: 	#bfbfbf;
+    color: #bfbfbf;
 }
-
-
-/* .header-nav ul li::after {
-    clear: both;
-} */
-
-/* .header-nav ul li a::before {
-    box-sizing: border-box;
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: -37px;
-    height: 1px;
-    width: 27px;
-    margin: auto 0;
-    background: #fff;
-    opacity: 1;
-    transition: all .5s linear;
-} */
 
 .brand-block {
     left: 0;
@@ -174,15 +151,11 @@ li {
 }
 
 .home-content {
-    /* z-index: 20; */
-    /* position: relative; */
     position: fixed;
     height: 200px;
     margin-top: 100px;
-    /* font-size: 40px; */
     color: white;
     padding: 30px 5% 5% 60px;
-
     width: 40%;
 }
 
@@ -194,20 +167,10 @@ li {
 }
 
 .content-subheading {
-    padding-left: 30%;
+    padding-left: 25%;
     font-size: 30px;
     letter-spacing: 3px;
 }
-/* 
-.nav-content-block {
-    position: relative;
-    width: 50%;
-    transition: right .5s ease;
-    background-color: #fff;
-    overflow: hidden;
-    right: -50%;
-    z-index: 20;
-} */
 
 section {
     display: flex;
@@ -215,18 +178,16 @@ section {
     overflow: hidden;
     padding: 70px 0;
     height: 100vh;
-    /* margin-left: 100px; */
     padding-left: 15%;
 }
 
 section h1 {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     letter-spacing: 3px;
 }
 
 .nav-content {
     top: 0;
-    /* left: 655px; */
     left: 44%;
     padding: 30px;
     width: 50%;
@@ -236,22 +197,26 @@ section h1 {
 
 .skills-container {
     display: flex;
-    justify-content: space-evenly;
+    margin-left: 5%;
+}
+
+.frontend-skills {
+    margin-right: 12%;
 }
 
 .skills-heading {
-    margin: 15px 0 15px 8px;
     font-size: 18px;
     font-weight: bold;
     border-bottom: 1px solid;
     letter-spacing: 3px;
+    text-align: center;
 }
 
 .skills-list {
     font-weight: normal;
     display: flex;
     flex-direction: column;
-    padding: 0;
+    padding: 0px;
 }
 
 .purple-bg {
@@ -259,15 +224,16 @@ section h1 {
 }
 
 .blue-bg {
-    color:  #21293E;
+    color: #21293E;
 }
 
 .projects-container {
     display: flex;
+    margin-left: 5%;
 }
 
 .project {
-    margin: 15px;
+    margin-right: 12%;
     width: 50%;
     height: 300px;
     background-color: lightgray;
@@ -282,7 +248,7 @@ section h1 {
     font-size: 18px;
     text-align: center;
     background: #fff;
-    border:  2px solid #21293E;
+    border: 2px solid #21293E;
     border-bottom: 1px solid #21293E;
 }
 
@@ -327,7 +293,6 @@ section h1 {
     border: 3px solid #585260;
 }
 
-
 .github {
     padding: 5px;
     height: 10%;
@@ -351,7 +316,7 @@ section h1 {
     flex-wrap: wrap;
     min-height: 30%;
     background: #fff;
-    border:  2px solid #21293E;
+    border: 2px solid #21293E;
     border-top: none;
 }
 
@@ -365,6 +330,10 @@ section h1 {
     border-radius: 15%;
 }
 
+#contact div {
+    margin-left: 5%;
+}
+
 #email {
     border: none;
     font-size: 16px;
@@ -372,7 +341,10 @@ section h1 {
 
 .fa-clipboard {
     font-size: 25px;
-    margin-left: 15px;
+    margin-left: 2%;
+    color: #21293E;
 }
 
-
+.fa-feather-alt {
+    color: #585260;
+}
