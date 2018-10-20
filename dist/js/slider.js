@@ -9,7 +9,7 @@ $(".home").click(function() {
 
 $(".nav-tab").click(function() {
   $(".header-nav").animate({ left: "25%" }, 1000);
-  // $(".header-nav").css('left', '25%');
+//   $(".header-nav").css('left', '25%');
   $(".overlay-shape").css("-webkit-transform", "rotate(0deg)");
   $(".overlay-shape").css("transition", "transform 1s");
   $(".header-nav").css("width", "25%");
