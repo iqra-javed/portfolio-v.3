@@ -7,6 +7,7 @@ body {
     -webkit-font-smoothing: antialiased;
     font-family: 'Quattrocento', serif;
     overflow: hidden;
+    height: 100%;
 }
 
 .header-nav {
@@ -72,7 +73,7 @@ li {
 .social-icons {
     display: flex;
     justify-content: space-around;
-    top: 100px;
+    top: 120px;
     left: 17%;
     font-size: 20px;
     color: #fff;
@@ -399,12 +400,26 @@ section h1 {
     }
 
     .overlay {
-        height: 80%;
+        height:65%;
     }
 
     .overlay-shape {
         -webkit-transform: none;
         transform: none;
+    }
+
+    .developer-info {
+        width: 100%;
+        text-align: center;
+        transition: all 1.5s ease-out;
+    }
+
+    .developer-heading {
+        padding: 0;
+    }
+
+    .developer-subheading {
+        padding: 0;
     }
 
     .header-nav {
@@ -425,10 +440,23 @@ section h1 {
         z-index: 1000;
     }
 
+    /* .btn-line-hide {
+        display: none;
+    } */
+/* 
+    .x-show {
+        display: block;
+        color: red;
+    } */
+
+    /* .x {
+        display: none;
+    } */
+
     .burger-nav {
         position: absolute;
         display: none;
-        height: 70%;
+        height: 65%;
         width: 100%;
         font-size: 12px;
         background: lightgray;
@@ -437,16 +465,18 @@ section h1 {
         bottom: 0;
         right: 0;
         z-index: 5;
-        transition: right .5s ease;
+        /* transition: right .5s ease; */
         backface-visibility: hidden;
     }
 
     .burger-nav ul {
+        visibility: visible;
         display: flex;
         flex-direction: column;
-        margin-top: 81px;
+        margin-top: 110px;
         text-align: center;
         padding: 0;
+        padding-top: 34px;
     }
 
     .nav {
@@ -457,6 +487,10 @@ section h1 {
         width: 100%;
         border-bottom: 1px solid;
         padding: 0;
+    }
+
+    .burger-nav ul li:first-child {
+       border-top: 1px solid;
     }
 
     .burger-nav ul li:hover {
@@ -470,7 +504,7 @@ section h1 {
         padding: 5px 0;
         display: block;
         /* position: relative; */
-        line-height: 50px;
+        line-height: 52px;
         text-transform: uppercase;
         letter-spacing: 3px;
         cursor: pointer;
@@ -541,10 +575,40 @@ section h1 {
     }
 }
 
+
+
+.mobile-view-social-icons {
+    display: flex;
+    justify-content: space-between;
+    width: 35%;
+    margin: 30px auto;
+    font-size: 20px;
+}
+
+.mobile-view-social-icons a{
+    color: #585260;
+}
+
+.mobile-view-social-icons a:hover {
+    color: #776f82;
+    cursor: pointer;
+}
+
+
+
 @media(max-width: 450px) {
     .project {
         margin-bottom: 70px;
         max-width: 70%;
+    }
+    
+    .developer-info {
+        padding: 50px 0 0 0px;
+    }
+
+    .mobile-view-social-icons {
+        width: 80%;
+        padding: 10px 10px;
     }
 }
 
@@ -602,3 +666,4 @@ section h1 {
     background: #fff;
     z-index: 10;
 }
+
