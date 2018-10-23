@@ -181,9 +181,10 @@ section {
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    padding: 70px 0;
+    padding: 70px 78px;
     height: 100vh;
     padding-left: 15%;
+    width: 100%;
 }
 
 section h1 {
@@ -193,11 +194,19 @@ section h1 {
 
 .nav-content {
     top: 0;
-    left: 44%;
+    left: 42%;
     padding: 30px;
-    width: 50%;
+    width: 65%;
     height: 100vh;
     position: absolute;
+}
+
+#skills {
+    background-color: #f9f9f9;
+}
+
+#contact {
+    background-color: #f9f9f9;
 }
 
 .skills-container {
@@ -355,6 +364,7 @@ section h1 {
     border: none;
     font-size: 16px;
     font-family: 'Quattrocento', serif;
+    background-color: #f9f9f9;
 }
 
 .fa-clipboard {
@@ -568,13 +578,13 @@ section h1 {
         height: 100%;
     }
 
-    #skills {
+    /* #skills {
         background-color: #f9f9f9;
     }
 
     #contact {
         background-color: #f9f9f9;
-    }
+    } */
 
     .skills-container {
         justify-content: center;
