@@ -80,6 +80,14 @@ $( window ).resize(function() {
   }
 });
 
+$( window ).resize(function() {
+
+  if(window.outerWidth < 450 && $('.header-nav')[0].style['left'] !== '25%') {
+    $('body').css('overflow-y', 'hidden')
+   
+  }
+});
+
 
 $( window ).resize(function() {
 
@@ -110,4 +118,15 @@ $(".burger-nav ul li a").click(function() {
   $("#nav").toggleClass('open-burger-nav');
   // $(".btn-line").toggleClass('btn-line-rotate');
 });
+
+
+$(".scroll-up-btn").click(function() {
+  $([document.documentElement, document.body]).animate(
+    {
+      scrollTop: $("#home").offset().top
+    },
+    1000
+  );
+})
+
 
