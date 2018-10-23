@@ -410,9 +410,9 @@ section h1 {
     box-sizing: border-box;
     float: right;
     margin-left: 32%;
-    font-size: 40px;
+    font-size: 30px;
     border-radius: 50%;
-    width: 60px;
+    width: 50px;
     position: fixed;
     padding-top: 10px;
     cursor: pointer;
