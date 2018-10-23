@@ -1,4 +1,5 @@
-  $(".home").click(function() {
+// Click events for home button
+$(".home").click(function() {
   $(".overlay-shape").css("-webkit-transform", "rotate(45deg)");
   $(".overlay-shape").css("transition", "transform 1s");
   $(".global-overlay").css("width", "100%");
@@ -7,10 +8,9 @@
   $("body").css("overflow-y", "hidden");
 });
 
+// Click events for nav buttons
 $(".nav-tab").click(function() {
-  $(".header-nav").animate({ left: "25%" }, 1000);
-  //   $(".header-nav").css('left', '25%');
-  // $(".overlay-shape").css("-webkit-transform", "rotate(0deg)");
+  $(".header-nav").css("left", "25%");
   $(".overlay-shape").css("-webkit-transform", "none");
   $(".overlay-shape").css("transition", "transform 1s");
   $(".header-nav").css("width", "25%");
@@ -18,6 +18,7 @@ $(".nav-tab").click(function() {
   $("body").css("overflow-y", "auto");
 });
 
+// Scroll Animation
 $(".about").click(function() {
   $([document.documentElement, document.body]).animate(
     {
@@ -54,72 +55,7 @@ $(".contact").click(function() {
   );
 });
 
-
-$( window ).resize(function() {
-  if(window.outerWidth < 951) {
-    $('body').css('overflow-y', 'auto')
-    $('.overlay-shape').css('-webkit-transform', 'none')
-  }
-});
-
-// let current_nav_tab = $("a").click(function( e ){
-//   //  e.preventDefault();
-  
-//       // return (jQuery(this).attr('href'));
-//       console.log((jQuery(this).attr('href')))
-//       return (jQuery(this).attr('href'));
-  
-//   });
-
-
-$( window ).resize(function() {
-
-  if(window.outerWidth > 950 && $('.header-nav')[0].style['left'] !== '25%') {
-    $('body').css('overflow-y', 'hidden')
-   
-  }
-});
-
-$( window ).resize(function() {
-
-  if(window.outerWidth < 450 && $('.header-nav')[0].style['left'] !== '25%') {
-    $('body').css('overflow-y', 'hidden')
-   
-  }
-});
-
-
-$( window ).resize(function() {
-
-  //  console.log($('.header-nav')[0].style)
-  // console.log($('body')[0].style['overflow-y'])
-  // console.log($('.header-nav')[0].style['left'] !== '25%')
-    // if(window.outerWidth > 950 && ($('body')[0].style['overflow-y'] === 'hidden') && ($('.header-nav')[0].style['left'] !== '25%'))  {
-    //   $('.overlay-shape').css('-webkit-transform', 'rotate(45deg)')
-    // }
-    if(window.outerWidth > 950 && ($('.header-nav')[0].style['left'] !== '25%'))  {
-      $('.overlay-shape').css('-webkit-transform', 'rotate(45deg)')
-    }
-  });
-
-
-$(".nav-toggle").click(function() {
-  
-  $("#nav").toggleClass('open-burger-nav');
-  // $(".btn-line").toggleClass('btn-line-rotate');
-
-  // $(".btn-line").toggleClass("btn-line-hide")
-  // $(".x-btn").toggleClass("x-show")
-});
-
-
-$(".burger-nav ul li a").click(function() {
-  
-  $("#nav").toggleClass('open-burger-nav');
-  // $(".btn-line").toggleClass('btn-line-rotate');
-});
-
-
+// Scroll animation for round scroll-up button
 $(".scroll-up-btn").click(function() {
   $([document.documentElement, document.body]).animate(
     {
@@ -127,6 +63,41 @@ $(".scroll-up-btn").click(function() {
     },
     1000
   );
-})
+});
 
+$(window).resize(function() {
+  if (window.outerWidth < 951) {
+    $("body").css("overflow-y", "auto");
+    $(".overlay-shape").css("-webkit-transform", "none");
+  }
+});
 
+// Adjusts vertical scroll bar visibility at various viewport widths / views
+$(window).resize(function() {
+  if (window.outerWidth > 950 && $(".header-nav")[0].style["left"] !== "25%") {
+    $("body").css("overflow-y", "hidden");
+  }
+});
+
+$(window).resize(function() {
+  if (window.outerWidth < 450 && $(".header-nav")[0].style["left"] !== "25%") {
+    $("body").css("overflow-y", "hidden");
+  }
+});
+
+/* Overlay shape remains rotated 45deg as long as viewport width is greater than 950px
+ and the side nav is at it's original location, i.e. user is at home page */
+$(window).resize(function() {
+  if (window.outerWidth > 950 && $(".header-nav")[0].style["left"] !== "25%") {
+    $(".overlay-shape").css("-webkit-transform", "rotate(45deg)");
+  }
+});
+
+// Open / Close toggle for burger nav at tablet and mobile widths
+$(".nav-toggle").click(function() {
+  $("#nav").toggleClass("open-burger-nav");
+});
+
+$(".burger-nav ul li a").click(function() {
+  $("#nav").toggleClass("open-burger-nav");
+});
