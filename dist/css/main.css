@@ -125,12 +125,14 @@ li {
 .scroll-up-btn {
     box-sizing: border-box;
     float: right;
-    margin-left: 32%;
+    margin-left: 30%;
     font-size: 30px;
     border-radius: 50%;
     width: 50px;
     position: fixed;
-    padding-top: 10px;
+    padding-top: 8px;
+    /* padding-right: 10px; */
+    padding-left: 17px;
     cursor: pointer;
     visibility: hidden;
     z-index: 5;
@@ -592,6 +594,12 @@ section h1 {
     }
 }
 
+@media(max-width: 768px) {
+    .overlay {
+        height: 40%;
+    }
+}
+
 /* M O B I L E  V I E W */
 @media(max-width: 450px) {
     body {
@@ -610,10 +618,11 @@ section h1 {
 
     .overlay {
         width: 100vw;
+        height: 50%;
     }
 
     .developer-info {
-        padding: 50px 0 0 0px;
+        padding: 10px 0 0 0px;
     }
 
 }
