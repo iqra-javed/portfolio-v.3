@@ -547,9 +547,10 @@ section h1 {
     .mobile-view-social-icons {
         display: flex;
         justify-content: space-between;
-        width: 35%;
         margin: 30px auto;
         font-size: 20px;
+        width: 45%;
+        padding: 5px 5px;
     }
 
     .mobile-view-social-icons a {
