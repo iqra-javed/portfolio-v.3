@@ -79,11 +79,11 @@ $(window).resize(function() {
   }
 });
 
-$(window).resize(function() {
-  if (window.outerWidth < 450 && $(".header-nav")[0].style["left"] !== "25%") {
-    $("body").css("overflow-y", "hidden");
-  }
-});
+// $(window).resize(function() {
+//   if (window.outerWidth < 450 && $(".header-nav")[0].style["left"] !== "25%") {
+//     $("body").css("overflow-y", "hidden");
+//   }
+// });
 
 /* Overlay shape remains rotated 45deg as long as viewport width is greater than 950px
  and the side nav is at it's original location, i.e. user is at home page */
