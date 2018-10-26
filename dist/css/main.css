@@ -595,6 +595,10 @@ section h1 {
 }
 
 @media(max-width: 768px) {
+    .scroll-up-btn {
+        margin-left: 35%;
+    }
+
     .overlay {
         height: 40%;
     }
@@ -608,6 +612,10 @@ section h1 {
 
     .nav-content {
         top: 360px;
+    }
+
+    .scroll-up-btn {
+        margin-left: 32%;
     }
 
     .project {
