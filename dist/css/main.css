@@ -97,22 +97,6 @@ li {
     font-size: 20px;
 }
 
-.social-icons {
-    display: flex;
-    justify-content: space-around;
-    top: 110px;
-    left: 17%;
-    font-size: 20px;
-    color: #fff;
-    position: relative;
-    padding: 10px;
-    width: 80%;
-}
-
-.social-icons a:hover {
-    color: #bfbfbf;
-}
-
 .nav-content {
     top: 0;
     left: 42%;
@@ -162,6 +146,10 @@ section h1 {
 #about div {
     line-height: 2;
     margin-left: 7%;
+}
+
+.social-links {
+    color: blue;
 }
 
 #skills {
@@ -329,6 +317,10 @@ section h1 {
 
 .fa-clipboard:hover {
     cursor: pointer;
+}
+
+.mobile-view-social-icons-container {
+    padding: 0;
 }
 
 .mobile-view-social-icons {
