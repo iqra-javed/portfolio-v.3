@@ -94,9 +94,15 @@ $(window).resize(function() {
 });
 
 // Open / Close toggle for burger nav at tablet and mobile widths
-$(".nav-toggle").click(function() {
-  $("#nav").toggleClass("open-burger-nav");
-});
+// $(".burger-nav-btn").click(function() {
+//   $("#nav").toggleClass("open-burger-nav");
+// });
+
+$(".burger-nav-btn").on("click", function(){
+  $(".burger-nav").slideToggle()
+})
+
+
 
 $(".burger-nav ul li a").click(function() {
   $("#nav").toggleClass("open-burger-nav");

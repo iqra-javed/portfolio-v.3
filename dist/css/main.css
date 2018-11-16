@@ -15,7 +15,7 @@ body {
     width: 100%;
 }
 
-.nav-toggle {
+.burger-nav-btn {
     display: none;
     float: right;
     border: 0;
@@ -418,13 +418,13 @@ section h1 {
         overflow-y: auto;
     }
 
-    .nav-toggle {
+    .burger-nav-btn {
         display: block;
         border: none;
         top: 10px;
     }
 
-    .nav-toggle:focus {
+    .burger-nav-btn:focus {
         outline: 0;
     }
 
