@@ -98,14 +98,16 @@ $(window).resize(function() {
 //   $("#nav").toggleClass("open-burger-nav");
 // });
 
-$(".burger-nav-btn").on("click", function(){
-  $(".burger-nav").slideToggle()
-})
+$(".burger-nav-btn").on("click", function() {
+  $(".burger-nav").slideToggle(600);
+});
 
+// $(".burger-nav ul li a").click(function() {
+//   $("#nav").toggleClass("open-burger-nav");
+// });
 
-
-$(".burger-nav ul li a").click(function() {
-  $("#nav").toggleClass("open-burger-nav");
+$(".burger-nav ul li a").on("click", function() {
+  $(".burger-nav").slideUp(600);
 });
 
 // Copy email
