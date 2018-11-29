@@ -19,6 +19,8 @@ body {
     display: none;
     float: right;
     left: 30px;
+    border: none;
+    top: 10px;
     border: 0;
     margin: 0;
     padding: 0;
@@ -422,8 +424,6 @@ section h1 {
 
     .burger-nav-btn {
         display: block;
-        border: none;
-        top: 10px;
     }
 
     .burger-nav-btn:focus {
@@ -487,10 +487,6 @@ section h1 {
         cursor: pointer;
     }
 
-    /* .open-burger-nav {
-        display: block;
-    } */
-
     .header-nav {
         display: none;
     }
@@ -507,7 +503,6 @@ section h1 {
         width: 100%;
         display: flex;
         flex-direction: column;
-
     }
 
     .scroll-up-btn {

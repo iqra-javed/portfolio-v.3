@@ -79,12 +79,6 @@ $(window).resize(function() {
   }
 });
 
-// $(window).resize(function() {
-//   if (window.outerWidth < 450 && $(".header-nav")[0].style["left"] !== "25%") {
-//     $("body").css("overflow-y", "hidden");
-//   }
-// });
-
 /* Overlay shape remains rotated 45deg as long as viewport width is greater than 950px
  and the side nav is at it's original location, i.e. user is at home page */
 $(window).resize(function() {
@@ -93,18 +87,9 @@ $(window).resize(function() {
   }
 });
 
-// Open / Close toggle for burger nav at tablet and mobile widths
-// $(".burger-nav-btn").click(function() {
-//   $("#nav").toggleClass("open-burger-nav");
-// });
-
 $(".burger-nav-btn").on("click", function() {
   $(".burger-nav").slideToggle(600);
 });
-
-// $(".burger-nav ul li a").click(function() {
-//   $("#nav").toggleClass("open-burger-nav");
-// });
 
 $(".burger-nav ul li a").on("click", function() {
   $(".burger-nav").slideUp(600);
